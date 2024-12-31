@@ -8,7 +8,7 @@ import Footer from '../components/Footer'
 const Home = () => {
   const [books,setBooks] = useState([])
   const fetchbooks = async()=>{
-    const response = await axios.get('https://basic-node-backend-shyo.onrender.com//book')
+    const response = await axios.get('https://basic-node-backend-shyo.onrender.com/book/')
     // console.log(response.status)  
     // console.log(response.data.data)   //response.data for recieving data and .data for target data and this .data is mentioned in backend in all read section
 

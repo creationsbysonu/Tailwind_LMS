@@ -75,7 +75,7 @@ const [data,setData] = useState({
     })
     formData.append('image',image)
   
-    const response = await axios.post("https://basic-node-backend-shyo.onrender.com//book",formData)
+    const response = await axios.post("https://basic-node-backend-shyo.onrender.com/book",formData)
     if(response.status === 200){
       navigate("/")
     }else{
