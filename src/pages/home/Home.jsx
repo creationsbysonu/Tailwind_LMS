@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Navbar from '../components/Navbar'
 import Card from '../components/Card'
 import axios from 'axios'
+import Footer from '../components/Footer'
 
 //connecting backend 
 const Home = () => {
@@ -37,7 +38,7 @@ const Home = () => {
               })
             }
          </div>
-        
+        <Footer />
     </>
   )
 }
