@@ -11,7 +11,7 @@ const SingleBook = () => {
   const [book,setBook]=useState({})
   console.log(id)
   const fetchBook = async ()=>{
-    const response = await axios.get(`https://basic-node-backend-shyo.onrender.com/book/${id}`)
+    const response = await axios.get(`https://basic-node-48px.onrender.com/book/${id}`)
     if (response.status===200){
       setBook(response.data.data)
     }
@@ -25,7 +25,7 @@ const SingleBook = () => {
   const navigate = useNavigate()
     const handleDelete = async (bookId) => {
       
-        const response = await axios.delete(`https://basic-node-backend-shyo.onrender.com/book/${bookId}`);
+        const response = await axios.delete(`https://basic-node-48px.onrender.com/book/${bookId}`);
   
         if (response) {
           alert("Book deleted successfully");

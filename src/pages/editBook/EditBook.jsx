@@ -37,7 +37,7 @@ const EditBook = () => {
           })
           formData.append('image',image)
         
-          const response = await axios.patch("https://basic-node-backend-shyo.onrender.com/book/"+ id, formData)
+          const response = await axios.patch("https://basic-node-48px.onrender.com/book/"+ id, formData)
           if(response.status === 200){
             navigate("/book/" + id)
           }else{
@@ -46,7 +46,7 @@ const EditBook = () => {
     }
 
     const fetchbook=async()=>{
-          const response = await axios.get("https://basic-node-backend-shyo.onrender.com/book/" + id)
+          const response = await axios.get("https://basic-node-48px.onrender.com/book/" + id)
           if(response.status === 200){
             console.log(response.data.data)//yo data chai backend ko data vanne bata aako ho
               setData(response.data.data)
