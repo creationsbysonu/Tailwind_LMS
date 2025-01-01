@@ -43,7 +43,7 @@ const SingleBook = () => {
           <div class='flex flex-wrap justify-normal'>
             <div class="max-w-sm bg-violet-100 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 p-2 mb-2 mt-2 mr-8 hover:shadow-black transition duration-500 ">
             <a href="#">
-                <img class="rounded-t-lg w-50 h-50" src={book.image} alt="" />
+                <img class="rounded-t-lg w-50 h-50" src={book.imageUrl}alt="" />
             </a>
               <div class="p-5">
                   <a href="#">
